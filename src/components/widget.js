@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Widget = ({ url, text, style, link }) => {
+const Widget = ({ url, text, link }) => {
   const innerStyle =
   {
     display: `block`,
@@ -11,19 +11,24 @@ const Widget = ({ url, text, style, link }) => {
     textDecoration: `none`,
     color: `#f1faee`,
   };
+  const flipped = 
+  {
+    background: `#f1faee`,
+    color: `#e63946`,
+  }
 
   return <div style={{
-    margin: `15px auto 30px`,
+    margin: `30px auto 0px`,
   }}>{link
     ? <Link
-      style={{...style}, innerStyle}
+      style={Object.assign({}, innerStyle, flipped)}
       to={link}
     >
       {text}
     </Link>
     : (
       <a
-        style={{...style}, innerStyle}
+        style={innerStyle}
         href={url}>
         {text}
       </a>

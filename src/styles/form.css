@@ -1,0 +1,56 @@
+/* TODO: var it up! */
+
+:root {
+    --faded-main-red: #f2505c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f1faee;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    color: #f1faee;
+    border-radius: 5px;
+    padding: 5px 20px 5px 10px;
+    margin: 0px 0px 25px;
+    background-color: var(--faded-main-red);
+    min-width: 100%;
+}
+
+form button {
+    margin: 20px 0 30px;
+    padding: 15px;
+    color: #f1faee;
+    border-radius: 5px;
+    background-color: var(--faded-main-red);
+    cursor: pointer;
+}
+
+.form-preview {
+    margin-top: 1.7rem;
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(241, 250, 238);
+    border-radius: 5px;
+}
+
+.form-preview p {
+    margin: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.bold {
+    font-weight: bold;
+}

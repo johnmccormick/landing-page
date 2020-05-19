@@ -7,9 +7,9 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Developer" />
     <h2>Developer</h2>
-    <Widget link="contact" text="contact" />
+    <Widget style={{backgroundColor: `white`}} link="contact" text="contact" />
     <Widget url="https://github.com/johnmccormick" text="github" />
     <Widget url="https://tv-roulette.herokuapp.com" text="tv roulette" />
     <Widget url="https://johnmccormick.github.io/fractal-cubes/" text="fractal cubes" />
