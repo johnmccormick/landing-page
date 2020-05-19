@@ -26,19 +26,24 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div style={{
+        maxWidth: 960,
+        textAlign: `center`,
+        padding: `0 1.0875rem 1.45rem`,
+        margin: `40px auto`,
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`
+      }}>
+        <h1 style={{ color: `#f1faee` }}>John McCormick</h1>
+        <main
+          style={{
+            minWidth: `50%`,
+            textAlign: `center`,
+          }}
+        >
+          {children}
+        </main>
       </div>
     </>
   )
