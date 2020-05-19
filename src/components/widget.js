@@ -1,39 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Widget = ({ url, text, link }) => {
-  const innerStyle =
-  {
-    display: `block`,
-    border: `2px solid #f1faee`,
-    borderRadius: `5px`,
-    padding: `12px`,
-    textDecoration: `none`,
-    color: `#f1faee`,
-  };
-  const flipped = 
-  {
-    background: `#f1faee`,
-    color: `#e63946`,
-  }
-
-  return <div style={{
-    margin: `30px auto 0px`,
-  }}>{link
+const Widget = ({ url, title, subtitle, link }) => {
+  return <>
+  {link
     ? <Link
-      style={Object.assign({}, innerStyle, flipped)}
+      className="widget"
       to={link}
     >
-      {text}
+      <span class="bold">{title}</span>
     </Link>
     : (
       <a
-        style={innerStyle}
-        href={url}>
-        {text}
+        className="widget"
+        href={url}
+        target="_blank"
+      >
+        <span class="bold">{title}</span><span class="widget-right">{subtitle}</span>
       </a>
     )}
-  </div>
+  </>
 }
 
 export default Widget

@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Widget from "../components/widget"
 
-import '../styles/form.css'
-
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -40,12 +38,9 @@ class Contact extends React.Component {
     return (
       <Layout>
         <SEO title="Contact" />
-        <h2>Contact</h2>
         {submitted ?
           <>
-            <h2 style={{
-              color: `#1d3557`
-            }}>Message sent!</h2>
+            <h2>Message sent!</h2>
             <div className="form-preview">
               <p><span className="bold">Name:</span> {name}</p>
               <p><span className="bold">Email:</span> {email}</p>
@@ -54,6 +49,7 @@ class Contact extends React.Component {
           </>
           :
           <>
+            <h2>Contact</h2>
             <form
               onSubmit={this.handleSubmit}
             >
@@ -69,11 +65,13 @@ class Contact extends React.Component {
                 Message
               </label>
               <textarea required name="message" onChange={this.handleChange} />
-              {submitting ? <button>Sending...</button> : <button type="submit">Send</button>}
+              <div className="button-container">
+                {submitting ? <button>Sending...</button> : <button type="submit">Send</button>}
+              </div>
             </form>
           </>
         }
-        <Widget link="/" text="Back"></Widget>
+        <Widget link="/" title="Back"></Widget>
       </Layout >
     )
   }

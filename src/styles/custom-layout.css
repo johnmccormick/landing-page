@@ -1,0 +1,98 @@
+/* CORE */
+:root {
+    --main-red: #e63946;
+    --very-very-pale-green: #f1faee;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+main {
+    min-width: 100%;
+}
+
+h2 {
+    margin: 2.25rem auto 1.5rem;
+}
+
+/* MAIN THEME */
+.widget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px auto 25px;
+    border: 2px solid var(--very-very-pale-green);
+    border-radius: 5px;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--very-very-pale-green);
+}
+
+.flipped {
+    background-color: var(--very-very-pale-green);
+    color: var(--main-red);
+}
+
+/* HELPER */
+.bold {
+    font-weight: bold;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    margin: 0px 0px 12px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    color: var(--main-red);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px 5px 10px;
+    margin: 0px 0px 25px;
+    background-color: var(--very-very-pale-green);
+}
+
+form textarea {
+    min-width: 100%;
+    resize: vertical;
+    max-height: 200px;
+}
+
+form .button-container {
+ width: 100%;
+ text-align: center;
+}
+
+form button {
+    margin: 10px 0 30px;
+    padding: 15px;
+    color: var(--main-red);
+    border-radius: 5px;
+    border: none;
+    background-color: var(--very-very-pale-green);
+    cursor: pointer;
+    font-weight: bold;
+    width: 50%;
+}
+
+.form-preview {
+    margin: 1.5rem 0;
+    padding: 15px;
+    text-align: left;
+    background-color: var(--very-very-pale-green);
+    border-radius: 5px;
+}
+
+.form-preview p {
+    margin: 0.5rem;
+    padding: 0.2rem 0;
+}
