@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Developer" />
     <h2>Developer</h2>
-    <Widget link="contact" title="Contact" />
+    <Widget link="/contact" title="Contact" />
     <Widget url="https://github.com/johnmccormick" title="Github" />
     <Widget url="https://www.linkedin.com/in/john--mccormick/" title="LinkedIn" />
     <h2>Work</h2>

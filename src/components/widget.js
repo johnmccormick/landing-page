@@ -8,15 +8,16 @@ const Widget = ({ url, title, subtitle, link }) => {
       className="widget"
       to={link}
     >
-      <span class="bold">{title}</span>
+      <span className="bold">{title}</span>
     </Link>
     : (
       <a
         className="widget"
         href={url}
         target="_blank"
+        rel="noreferrer"
       >
-        <span class="bold">{title}</span><span class="widget-right">{subtitle}</span>
+        <span className="bold">{title}</span><span>{subtitle}</span>
       </a>
     )}
   </>

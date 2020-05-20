@@ -14,7 +14,6 @@ class Contact extends React.Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = (event) => {
-    debugger;
     const { email, name, message, submitted, submitting } = this.state;
 
     event.preventDefault();
