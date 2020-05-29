@@ -16,10 +16,10 @@ const IndexPage = () => (
     <Widget url="https://www.pizzaexpress.com/mobile-pay" title="PizzaExpress: Mobile Pay" subtitle="2020"/>
     <Widget url="https://tv-roulette.herokuapp.com" title="TV Roulette" subtitle="2019"/>
     <h2>Fun stuff</h2>
+    <Widget url="https://johnmccormick.github.io/fluid-cubes/" title="Fluid Cubes" subtitle="2020"/>
     <Widget url="https://johnmccormick.github.io/fractal-cubes/" title="Fractal Cubes" subtitle="2020"/>
-    <Widget url="https://johnmccormick.github.io/rising-sinking-cubes/" title="Rising Sinking Cubes" subtitle="2020"/>
     <Widget url="https://johnmccormick.github.io/plant/" title="Plant" subtitle="2017"/>
-    <Widget url="https://disciplesofwren.com" title="Disciples of Wren" subtitle="2015"/>
+    <Widget url="https://disciplesofwren.com" title="Disciples of Wren" subtitle="2016"/>
     <Widget url="https://johnmccormick.github.io/lightcycles/" title="Light Cycles" subtitle="2011"/>
   </Layout>
 )
